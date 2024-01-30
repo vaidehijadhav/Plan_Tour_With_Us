@@ -9,7 +9,7 @@ function Tours ({tours, removeTour}){
             <div className='cards'>
                 {
                     tours.map((tour)=>{        //har ek tour ki value ke liye card return kr raha hai
-                        return <Card {...tour} removeTour={removeTour}></Card>   //spread operator. cloning the object
+                        return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>   //spread operator. cloning the object
                     })
                 }
                 
