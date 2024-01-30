@@ -1,4 +1,6 @@
-function Tours ({tours}){
+import Card from './Card';
+
+function Tours ({tours, removeTour}){
     return(
         <div>
             <div>
@@ -7,7 +9,7 @@ function Tours ({tours}){
             <div>
                 {
                     tours.map((tour)=>{        //har ek tour ki value ke liye card return kr raha hai
-                        return <Card {...tour}></Card>   //spread operator. cloning the object
+                        return <Card {...tour} removeTour={removeTour}></Card>   //spread operator. cloning the object
                     })
                 }
                 
