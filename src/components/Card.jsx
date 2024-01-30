@@ -2,8 +2,9 @@ import React, {useState} from "react"
 
 function Card({ id, name, info, image, price, removeTour }) {
     const[readmore, setReadmore]= useState(false);
-    const description = `${info.substring(0, 200)}....`; //substring is used to cut the string from 0 to 200
+    const description = readmore ? info :`${info.substring(0, 200)}....`; //substring is used to cut the string from 0 to 200
 
+                    
     function readmoreHandler(){
         setReadmore(!readmore);
     }
