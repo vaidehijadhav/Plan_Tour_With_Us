@@ -96,3 +96,16 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+.btn-white{
+    margin-top: 18px;
+    padding: 10px 80px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-white:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.2s;
+}
